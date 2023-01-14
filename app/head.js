@@ -1,9 +1,15 @@
-export default function Head() {
+import React from "react";
+
+export default function head() {
   return (
-    <>
-      <title>Anomm: anonymous messages directly to your telegram inbox</title>
-      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    </>
+    <head>
+      <title>Anomm</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+      />
+    </head>
   );
 }

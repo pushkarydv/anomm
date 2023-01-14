@@ -10,7 +10,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head></head>
-      <body>{children}</body>
+      <body className="custom-font">{children}</body>
     </html>
   );
 }

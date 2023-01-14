@@ -1,5 +1,7 @@
 /* Import custom font most probably by html */
-
+.custom-font {
+  font-family: "Manrope", sans-serif;
+}
 /* Custom Animations */
 
 /* Custom Scrollbar */

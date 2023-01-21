@@ -5,17 +5,16 @@ import "../styles/custom.css";
 import { Manrope } from "@next/font/google";
 const manrope = Manrope({
   subsets: ["latin"],
-  // default, can also use "swap" to ensure custom font always shows
   display: "optional",
 });
-export default function RootLayout({
-  // Layouts must accept a children prop.
-  // This will be populated with nested layouts or pages
-  children,
-}) {
+export default function RootLayout({ children }) {
   return (
     <html lang="en" className={manrope.className}>
-      <head></head>
+      <head>
+        <meta charSet="UTF-8" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </head>
       <body>{children}</body>
     </html>
   );

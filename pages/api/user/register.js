@@ -14,7 +14,7 @@ export default async (req, res) => {
     //   username,
     //   userKey,
     // });
-
+    res.setHeader("Cache-Control", `max-age=N, public`);
     res.json(updates);
   } catch (e) {
     console.error(e);

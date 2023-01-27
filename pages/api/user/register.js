@@ -21,7 +21,7 @@ export default async (req, res) => {
             }/sendMessage?chat_id=${
               updates.data.result[i].message.from.id
             }&text=${encodeURI(
-              "Hello, Welcome to Anomm.\nThis is a free service to deliver anonymous messages directly to your telegram via a bot to make you a friendly experience of chat based interface.\n\nManage Your account here: https://anomm.verce.app/dashbaord"
+              "Hello, Welcome to Anomm.\nThis is a free service to deliver anonymous messages directly to your telegram via a bot to make you a friendly experience of chat based interface.\n\nManage Your account here: https://anomm.vercel.app/dashbaord"
             )}`
           );
           res.status(200).send(respond_to_user.data);

@@ -1,3 +1,26 @@
-/* Custom Animations */
-
-/* Custom Scrollbar */
+.loader-inner {
+  width: 1rem;
+  animation: inner-loader-move 2s ease infinite,
+    loader-width-change 2s ease infinite;
+}
+@keyframes inner-loader-move {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 100%;
+  }
+}
+@keyframes loader-width-change {
+  0%,
+  100% {
+    width: 0;
+  }
+  30% {
+    width: 50%;
+  }
+  60% {
+    width: 30%;
+  }
+}
+/* TODO: Custom Scrollbar */

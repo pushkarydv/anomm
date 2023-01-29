@@ -1,22 +1,9 @@
-"use client";
-import axios from "axios";
-import React, { useRef } from "react";
+import Link from "next/link";
+import React from "react";
 import { ARROW_LEFT } from "../../components/svgs";
 export default function Page() {
-  const username = useRef();
-
-  function botRegister(e) {
-    e.preventDefault();
-
-    if (username.current.value != "" && username.current.value != undefined) {
-      console.log(username.current.value);
-      // axios.post("api/bot/register", {
-      //   username: username.current.value,
-      // });
-    }
-  }
   return (
-    <div className="bg-emerald-50/5">
+    <main className="bg-emerald-50/5">
       <div className="navbar">navbar</div>
       <div className="flex flex-col md:flex-row my-12 w-[95%] md:w-[85%] lg:w-[75%] mx-auto min-h-[80vh] items-center gap-8 sm:gap-4 shrink-0">
         <div className="w-full md:w-1/2 flex flex-col gap-2">
@@ -42,9 +29,12 @@ export default function Page() {
           <div className="mt-4 font-regular text-base">
             Completed above steps ?
           </div>
-          <button className="transition-all font-semibold text-lg w-fit py-2 px-4 rounded-full text-emerald-900 bg-emerald-200 active:scale-90">
+          <Link
+            className="transition-all font-semibold text-lg w-fit py-2 px-4 rounded-full text-emerald-900 bg-emerald-200 active:scale-90"
+            href={"/register/verify"}
+          >
             Continue
-          </button>
+          </Link>
         </div>
         <div className="w-full md:w-1/2">
           <div className="w-[90%] sm:w-96 mx-auto min-h-[70vh] rounded-2xl relative bg-black/80">
@@ -67,16 +57,6 @@ export default function Page() {
           </div>
         </div>
       </div>
-      {/* <form onSubmit={(e) => botRegister(e)}>
-        <input
-          type="text"
-          name="username"
-          id="username"
-          placeholder="username"
-          ref={username}
-        />
-        <button type="submit">Proceed</button>
-      </form> */}
-    </div>
+    </main>
   );
 }

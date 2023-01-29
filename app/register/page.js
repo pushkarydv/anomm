@@ -18,11 +18,33 @@ export default function Page() {
   return (
     <div className="bg-emerald-50/5">
       <div className="navbar">navbar</div>
-      <div className="flex flex-col md:flex-row my-12 w-[95%] sm:w-[85%] md:w-[75%] lg:w-[65%] mx-auto min-h-[80vh] items-center gap-4">
-        <div className="w-full md:w-1/2">
-          <div className="text-xl font-bold text-slate-600">
-            Experince anonymous message like never before
+      <div className="flex flex-col md:flex-row my-12 w-[95%] md:w-[85%] lg:w-[75%] mx-auto min-h-[80vh] items-center gap-8 sm:gap-4 shrink-0">
+        <div className="w-full md:w-1/2 flex flex-col gap-2">
+          <div className="text-3xl font-bold text-slate-600 mb-4">
+            Experince anonymous message like never before - directly to your
+            inbox
           </div>
+          <ul className="text-2xl list-none gap-4 font-semibold">
+            <li>
+              Step 1: Open Anomm (@anomm_bot) bot in your telegram.You can{" "}
+              <a
+                href="https://t.me/anomm_bot"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="underline underline-offset-2"
+              >
+                click here
+              </a>{" "}
+              to open directly.
+            </li>
+            <li>Step 2:Click on Start</li>
+          </ul>
+          <div className="mt-4 font-regular text-base">
+            Completed above steps ?
+          </div>
+          <button className="transition-all font-semibold text-lg w-fit py-2 px-4 rounded-full text-emerald-900 bg-emerald-200 active:scale-90">
+            Continue
+          </button>
         </div>
         <div className="w-full md:w-1/2">
           <div className="w-[90%] sm:w-96 mx-auto min-h-[70vh] rounded-2xl relative bg-black/80">

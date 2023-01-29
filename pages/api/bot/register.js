@@ -6,7 +6,7 @@ export default async (req, res) => {
     const updates = await axios.get(
       `https://api.telegram.org/bot${process.env.NEXT_PUBLIC_TELEGRAM_BOT_TOKEN}/getUpdates`
     );
-    const { username } = req.body;
+    const username = req.body.username;
     if (username) {
       try {
         let noMatchFlag = true;

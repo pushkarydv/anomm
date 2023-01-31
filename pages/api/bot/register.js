@@ -20,7 +20,7 @@ export default async (req, res) => {
               }/sendMessage?chat_id=${
                 updates.data.result[i].message.from.id
               }&text=${encodeURI(
-                "Hello, Welcome to Anomm.\nThis is a free service to deliver anonymous messages directly to your telegram via a bot to make you a friendly experience of chat based interface.\n\nManage Your account here: https://anomm.pushkaryadav.in/dashbaord"
+                `Hello, Welcome to Anomm.\nThis is a free service to deliver anonymous messages directly to your telegram via a bot to make you a friendly experience of chat based interface.\n\nYour anonymous messages link: \nhttps://anomm.pushkaryadav.in/message/${updates.data.result[i].message.chat.id}`
               )}`
             );
             res.status(200).send({

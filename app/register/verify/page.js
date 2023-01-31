@@ -59,6 +59,7 @@ export default function Page() {
                 max={200}
                 required={true}
                 ref={username}
+                autoCapitalize="off"
                 className="transition-all font-semibold text-lg w-full py-2 px-3 mb-4 rounded-full text-emerald-700 outline-none ring-2 ring-emerald-200 focus:ring-emerald-400"
                 autoComplete="off"
               />

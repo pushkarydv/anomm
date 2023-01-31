@@ -14,9 +14,12 @@ export default function NavBar() {
         (navBtnToggle ? "bg-transparent" : "bg-white/70 backdrop-blur-2xl ")
       }
     >
-      <div className="py-2 gap-2 flex flex-row text-2xl text-emerald-900 font-semibold md:text-3xl justify-center items-center relative z-50">
+      <Link
+        className="py-2 gap-2 flex flex-row text-2xl text-emerald-900 font-semibold md:text-3xl justify-center items-center relative z-50"
+        href={"/"}
+      >
         <img src="/logo.png" className="w-8 md:w-10" alt="" /> Anomm
-      </div>
+      </Link>
 
       {/* Mobile nav items - breakpoint md */}
 

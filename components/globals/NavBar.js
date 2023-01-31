@@ -12,17 +12,24 @@ export default function NavBar() {
       <div className="py-2 gap-2 flex flex-row text-2xl text-emerald-900 font-semibold md:text-3xl justify-center items-center relative z-50">
         <img src="/logo.png" className="w-8 md:w-10" alt="" /> Anomm
       </div>
+
+      {/* Mobile nav items - breakpoint md */}
+
       <div
         className={
           "transition-all flex flex-col justify-center items-center gap-2 z-40 h-screen w-full bg-white/60 backdrop-blur-md top-0 left-0 text-xl font-semibold text-slate-800 md:hidden " +
           (navBtnToggle ? "fixed" : "hidden")
         }
       >
+        <Link href={"/"}>Home</Link>
         <Link href={"/register"}>Register</Link>
         <Link href={"/message"}>Message</Link>
         <Link href={"/about"}>About</Link>
         <Link href={"/support"}>Support</Link>
       </div>
+
+      {/* Destop nav items - breakpoint md */}
+
       <div className="hidden text-xl font-semibold text-slate-800 md:flex md:flex-row md:gap-4 md:justify-between md:items-center">
         <Link href={"/"}>Home</Link>
         <Link href={"/register"}>Register</Link>

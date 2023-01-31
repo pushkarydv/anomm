@@ -24,3 +24,20 @@
   }
 }
 /* TODO: Custom Scrollbar */
+
+.horizontal-scroll::-webkit-scrollbar {
+  width: 0.7rem;
+  height: 0.3rem;
+}
+.horizontal-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.horizontal-scroll::-webkit-scrollbar-thumb {
+  background: #0cad7a;
+  transition: 0.3s ease;
+  border: 3px solid transparent;
+  border-radius: 100vh;
+}
+.horizontal-scroll::-webkit-scrollbar-thumb:hover {
+  background: #059669;
+}

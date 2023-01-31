@@ -15,7 +15,6 @@ export default function Page() {
       messageText.current.value != undefined
     ) {
       setProcessing(true);
-      console.log(messageText.current.value);
       // axios
       //   .post("/api/message", {
       //     id: user_id,

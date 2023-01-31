@@ -18,7 +18,7 @@ export default function Page() {
                 href="https://t.me/anomm_bot"
                 target="_blank"
                 rel="noreferrer noopener"
-                class="underline underline-offset-2"
+                className="underline underline-offset-2"
               >
                 click here
               </a>{" "}

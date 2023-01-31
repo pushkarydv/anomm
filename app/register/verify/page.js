@@ -43,6 +43,9 @@ export default function Page() {
           Now once you press start on bot, Just verify it by entering your
           telegram username
         </div>
+        <div className="font-bold text-slate-800 mt-2 md:text-center">
+          Small and Capital letters matter in username
+        </div>
         <div className="transition-all w-full sm:w-96 mx-auto my-8 py-4 text-center">
           {/* only show form if not processign and no user data return from api */}
           {!processing && user == null && (

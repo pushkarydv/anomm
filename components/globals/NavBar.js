@@ -8,7 +8,12 @@ export default function NavBar() {
     setNavBtnToggle(navBtnToggle ? false : true);
   }
   return (
-    <nav className="flex justify-between flex-row items-center px-4 sticky top-0 left-0 w-full z-50">
+    <nav
+      className={
+        "flex py-1 justify-between flex-row items-center px-4 sticky top-0 left-0 w-full z-50 " +
+        (navBtnToggle ? "bg-transparent" : "bg-white/70 backdrop-blur-2xl ")
+      }
+    >
       <div className="py-2 gap-2 flex flex-row text-2xl text-emerald-900 font-semibold md:text-3xl justify-center items-center relative z-50">
         <img src="/logo.png" className="w-8 md:w-10" alt="" /> Anomm
       </div>

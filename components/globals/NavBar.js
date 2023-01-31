@@ -42,8 +42,8 @@ export default function NavBar() {
         ></div>
         <div
           className={
-            "transition-all w-9 h-[0.3rem] bg-emerald-600 rounded-full -" +
-            (navBtnToggle && "rotate-45 -translate-y-2")
+            "transition-all w-9 h-[0.3rem] bg-emerald-600 rounded-full " +
+            (navBtnToggle && "-rotate-45 -translate-y-2")
           }
         ></div>
       </div>

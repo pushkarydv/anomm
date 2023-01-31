@@ -2,6 +2,7 @@
 import axios from "axios";
 import Link from "next/link";
 import React, { useRef, useState } from "react";
+import NavBar from "../../../components/globals/NavBar";
 import { ARROW_LEFT } from "../../../components/svgs";
 
 export default function Page() {
@@ -31,7 +32,7 @@ export default function Page() {
   }
   return (
     <main className="bg-emerald-50/5">
-      <div className="navbar">navbar</div>
+      <NavBar />
       <div className="my-12 px-4">
         <Link
           className="transition-all font-semibold text-lg w-fit py-1 px-3 mb-4 rounded-full text-emerald-700 ring-2 ring-emerald-400 active:scale-90 flex flex-row gap-1 justify-center items-center"

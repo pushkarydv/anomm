@@ -1,10 +1,11 @@
 import Link from "next/link";
 import React from "react";
+import NavBar from "../../components/globals/NavBar";
 import { ARROW_LEFT } from "../../components/svgs";
 export default function Page() {
   return (
     <main className="bg-emerald-50/5">
-      <div className="navbar">navbar</div>
+      <NavBar />
       <div className="flex flex-col md:flex-row my-12 w-[95%] md:w-[85%] lg:w-[75%] mx-auto min-h-[80vh] items-center gap-8 sm:gap-4 shrink-0">
         <div className="w-full md:w-1/2 flex flex-col gap-2">
           <div className="text-3xl font-bold text-slate-600 mb-4">

@@ -1,5 +1,4 @@
 import axios from "axios";
-// import clientPromise from "../../../config/dbConnect";
 
 export default async (req, res) => {
   if (req.method == "POST") {

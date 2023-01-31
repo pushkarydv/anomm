@@ -1,9 +1,11 @@
 "use client";
+import axios from "axios";
 import React, { useRef, useState } from "react";
-import NavBar from "../../components/globals/NavBar";
-import { ARROW_LEFT } from "../../components/svgs";
+import NavBar from "../../../components/globals/NavBar";
+import { ARROW_LEFT } from "../../../components/svgs";
 
-export default function Page() {
+export default function Page({ params }) {
+  const id = params.id;
   const messageText = useRef();
   const [processing, setProcessing] = useState(false);
   const [serverResponse, setServerResponse] = useState(null);
@@ -15,24 +17,20 @@ export default function Page() {
       messageText.current.value != undefined
     ) {
       setProcessing(true);
-      // axios
-      //   .post("/api/message", {
-      //     id: user_id,
-      //     message: messageText.current.value,
-      //   })
-      //   .then((res) => {
-      //     console.log(res.data);
-      //   })
-      //   .catch((err) => {
-      //     alert(err.response.data.error);
-      //   })
-      //   .finally(() => {
-      //     setProcessing(false);
-      //   });
-      setTimeout(() => {
-        setProcessing(false);
-        setServerResponse(true);
-      }, 3000);
+      axios
+        .post("/api/message", {
+          id: id,
+          message: messageText.current.value,
+        })
+        .then((res) => {
+          setServerResponse(true);
+        })
+        .catch((err) => {
+          alert(err.response.data.error);
+        })
+        .finally(() => {
+          setProcessing(false);
+        });
     }
   }
   return (

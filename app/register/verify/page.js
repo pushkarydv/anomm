@@ -106,11 +106,7 @@ export default function Page() {
             <code
               className="cursor-pointer text-emerald-900 mt-2 block py-1 px-2 rounded-md bg-emerald-100 overflow-x-auto horizontal-scroll"
               title="copy"
-              onClick={() =>
-                copyMessageUrl(
-                  `https://anomm.pushkaryadav.in/message/${user.id}`
-                )
-              }
+              onClick={() => copyMessageUrl(user.id)}
             >
               https://anomm.pushkaryadav.in/message/{user.id}
             </code>
@@ -120,7 +116,7 @@ export default function Page() {
     </main>
   );
 }
-function copyMessageUrl(url) {
-  navigator.clipboard.writeText(url);
+function copyMessageUrl(id) {
+  navigator.clipboard.writeText(`https://anomm.pushkaryadav.in/message/${id}`);
   alert("Link Copied");
 }

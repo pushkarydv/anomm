@@ -12,7 +12,7 @@ export default function Page() {
             Experince anonymous message like never before - directly to your
             inbox
           </div>
-          <ul className="text-2xl list-none gap-4 font-semibold">
+          <ul className="text-2xl list-none font-semibold">
             <li>
               <span className="text-emerald-700">Step 1: </span> Open Anomm
               (@anomm_bot) bot in your telegram.You can{" "}
@@ -26,7 +26,7 @@ export default function Page() {
               </a>{" "}
               to open directly.
             </li>
-            <li>
+            <li className="mt-2">
               <span className="text-emerald-700">Step 2: </span>Click on Start
             </li>
           </ul>

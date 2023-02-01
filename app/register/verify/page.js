@@ -107,8 +107,10 @@ export default function Page() {
               https://anomm.pushkaryadav.in/message/{user.id}
             </code>
             <button
-              className="mt-4 text-base font-semibold bg-emerald-600 ring-2 ring-emerald-400 text-emerald-100 block w-fit mx-auto p-2 rounded-md"
-              onClick={() => copyMessageUrl(user.id)}
+              className="mt-4 text-base font-semibold bg-emerald-600 ring-2 ring-emerald-400 text-emerald-100 block w-fit mx-auto p-2 rounded-md active:scale-95"
+              onClick={() =>
+                copyUrl(`https://anomm.pushkaryadav.in/message/${user.id}`)
+              }
             >
               Copy Link 📋
             </button>
@@ -118,7 +120,6 @@ export default function Page() {
     </main>
   );
 }
-function copyMessageUrl(id) {
-  navigator.clipboard.writeText(`https://anomm.pushkaryadav.in/message/${id}`);
-  alert("Link Copied");
+export function copyUrl(o) {
+  navigator.clipboard.writeText(o);
 }

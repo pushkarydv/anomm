@@ -23,6 +23,35 @@
     width: 30%;
   }
 }
+
+.hero-bg {
+  background: linear-gradient(-45deg, #02aab0, #4776e6, #00cdac, #8e54e9);
+  background-size: 600%;
+  -webkit-animation: hero-bg-rotate 16s linear infinite;
+  animation: hero-bg-rotate 10s linear infinite;
+}
+@-webkit-keyframes hero-bg-rotate {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  to {
+    background-position: 0 50%;
+  }
+}
+@keyframes hero-bg-rotate {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  to {
+    background-position: 0 50%;
+  }
+}
 /* TODO: Custom Scrollbar */
 
 .horizontal-scroll::-webkit-scrollbar {

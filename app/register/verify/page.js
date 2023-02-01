@@ -16,7 +16,7 @@ export default function Page() {
       setProcessing(true);
       axios
         .post("/api/bot/register", {
-          username: username.current.value,
+          username: username.current.value.trim(),
         })
         .then((res) => {
           setUser(res.data.user);
@@ -42,12 +42,12 @@ export default function Page() {
         {user == null && (
           <>
             {" "}
-            <div className="mt-12 text-xl text-justify sm:text-center">
-              Now once you press start on bot, Just verify it by entering your
-              telegram username
+            <div className="mt-12 text-xl lg:mt-24 lg:text-2xl font-semibold sm:text-center">
+              Now Just verify it by entering your telegram username (If pressed
+              within last 24 hrs)
             </div>
-            <div className="font-bold text-slate-800 mt-2 md:text-center">
-              Small and Capital letters matter in username
+            <div className="font-bold lg:text-xl text-slate-800 mt-2 md:text-center">
+              Small, Capital letters &amp; matter in username
             </div>
           </>
         )}
@@ -103,13 +103,15 @@ export default function Page() {
               telegram
             </div>
 
-            <code
-              className="cursor-pointer text-emerald-900 mt-2 block py-1 px-2 rounded-md bg-emerald-100 overflow-x-auto horizontal-scroll"
-              title="copy"
-              onClick={() => copyMessageUrl(user.id)}
-            >
+            <code className="text-emerald-900 mt-2 block p-2 rounded-md bg-emerald-100 overflow-x-auto horizontal-scroll">
               https://anomm.pushkaryadav.in/message/{user.id}
             </code>
+            <button
+              className="mt-4 text-base font-semibold bg-emerald-600 ring-2 ring-emerald-400 text-emerald-100 block w-fit mx-auto p-2 rounded-md"
+              onClick={() => copyMessageUrl(user.id)}
+            >
+              Copy Link 📋
+            </button>
           </div>
         )}
       </div>

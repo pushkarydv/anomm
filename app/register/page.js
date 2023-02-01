@@ -7,14 +7,15 @@ export default function Page() {
     <main className="bg-emerald-50/5">
       <NavBar />
       <div className="flex flex-col md:flex-row my-12 w-[95%] md:w-[85%] lg:w-[75%] mx-auto min-h-[80vh] items-center gap-8 sm:gap-4 shrink-0">
-        <div className="w-full md:w-1/2 flex flex-col gap-2">
-          <div className="text-3xl font-bold text-slate-600 mb-4">
+        <div className="w-full md:w-1/2 flex flex-col gap-2 px-4">
+          <div className="text-3xl font-bold text-slate-600 mb-4 hidden sm:block">
             Experince anonymous message like never before - directly to your
             inbox
           </div>
           <ul className="text-2xl list-none gap-4 font-semibold">
             <li>
-              Step 1: Open Anomm (@anomm_bot) bot in your telegram.You can{" "}
+              <span className="text-emerald-700">Step 1: </span> Open Anomm
+              (@anomm_bot) bot in your telegram.You can{" "}
               <a
                 href="https://t.me/anomm_bot"
                 target="_blank"
@@ -25,13 +26,15 @@ export default function Page() {
               </a>{" "}
               to open directly.
             </li>
-            <li>Step 2:Click on Start</li>
+            <li>
+              <span className="text-emerald-700">Step 2: </span>Click on Start
+            </li>
           </ul>
-          <div className="mt-4 font-regular text-base">
+          <div className="mt-4 mb-2 font-regular text-base">
             Completed above steps ?
           </div>
           <Link
-            className="transition-all font-semibold text-lg w-fit py-2 px-4 rounded-full text-emerald-900 bg-emerald-200 active:scale-90"
+            className="transition-all font-semibold text-lg w-fit py-2 px-4 rounded-full text-emerald-900 bg-emerald-100 ring-2 ring-emerald-300 active:scale-90"
             href={"/register/verify"}
           >
             Continue

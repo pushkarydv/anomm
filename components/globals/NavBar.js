@@ -31,7 +31,13 @@ export default function NavBar() {
       >
         <Link href={"/"}>Home</Link>
         <Link href={"/register"}>Register</Link>
-        <Link href={"/support"}>Support</Link>
+        <a
+          href="https://www.buymeacoffee.com/pushkarydv"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Support
+        </a>
       </div>
 
       {/* Destop nav items - breakpoint md */}
@@ -39,7 +45,13 @@ export default function NavBar() {
       <div className="hidden text-xl font-semibold text-slate-800 md:flex md:flex-row md:gap-4 md:justify-between md:items-center">
         <Link href={"/"}>Home</Link>
         <Link href={"/register"}>Register</Link>
-        <Link href={"/support"}>Support</Link>
+        <a
+          href="https://www.buymeacoffee.com/pushkarydv"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Support
+        </a>
       </div>
       <div
         className="w-9 my-2 h-5 flex flex-col justify-between cursor-pointer md:hidden relative z-50"

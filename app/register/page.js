@@ -28,6 +28,7 @@ export default function Page() {
             </li>
             <li className="mt-2">
               <span className="text-emerald-700">Step 2: </span>Click on Start
+              button in bot
             </li>
           </ul>
           <div className="mt-4 mb-2 font-regular text-base">

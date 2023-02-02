@@ -1,8 +1,10 @@
 "use client";
 import axios from "axios";
+import { addDoc, collection } from "firebase/firestore";
 import React, { useRef, useState } from "react";
 import NavBar from "../../../components/globals/NavBar";
 import { ARROW_LEFT } from "../../../components/svgs";
+import { db } from "../../../config/firebase";
 
 export default function Page({ params }) {
   const id = params.id;
@@ -24,6 +26,7 @@ export default function Page({ params }) {
         })
         .then((res) => {
           setServerResponse(true);
+          addMessage(id, res.data.data.result.text);
         })
         .catch((err) => {
           alert(err.response.data.error);
@@ -96,4 +99,10 @@ export default function Page({ params }) {
       </div>
     </main>
   );
+}
+async function addMessage(user_id, text) {
+  await addDoc(collection(db, "messages"), {
+    id: user_id,
+    message: text,
+  });
 }

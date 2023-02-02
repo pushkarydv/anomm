@@ -31,7 +31,6 @@ export default function NavBar() {
       >
         <Link href={"/"}>Home</Link>
         <Link href={"/register"}>Register</Link>
-        <Link href={"/about"}>About</Link>
         <Link href={"/support"}>Support</Link>
       </div>
 
@@ -40,7 +39,6 @@ export default function NavBar() {
       <div className="hidden text-xl font-semibold text-slate-800 md:flex md:flex-row md:gap-4 md:justify-between md:items-center">
         <Link href={"/"}>Home</Link>
         <Link href={"/register"}>Register</Link>
-        <Link href={"/about"}>About</Link>
         <Link href={"/support"}>Support</Link>
       </div>
       <div

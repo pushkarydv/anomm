@@ -3,6 +3,8 @@ import axios from "axios";
 import Link from "next/link";
 import React, { useRef, useState } from "react";
 import NavBar from "../../../components/globals/NavBar";
+import { setDoc, doc } from "firebase/firestore";
+import { db } from "../../../config/firebase";
 import { ARROW_LEFT } from "../../../components/svgs";
 
 export default function Page() {
@@ -20,6 +22,8 @@ export default function Page() {
         })
         .then((res) => {
           setUser(res.data.user);
+          // add this user to our database
+          addUser(res.data.user);
         })
         .catch((err) => {
           alert(err.response.data.error);
@@ -122,4 +126,11 @@ export default function Page() {
 }
 export function copyUrl(o) {
   navigator.clipboard.writeText(o);
+}
+
+async function addUser(data) {
+  await setDoc(doc(db, "users", data.username), {
+    firstName: data.first_name,
+    id: data.id,
+  });
 }

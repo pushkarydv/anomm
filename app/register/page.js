@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import Footer from "../../components/globals/Footer";
 import NavBar from "../../components/globals/NavBar";
 import { ARROW_LEFT } from "../../components/svgs";
 export default function Page() {
@@ -62,6 +63,7 @@ export default function Page() {
           </div>
         </div>
       </div>
+      <Footer />
     </main>
   );
 }

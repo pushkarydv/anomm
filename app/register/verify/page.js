@@ -6,6 +6,7 @@ import NavBar from "../../../components/globals/NavBar";
 import { setDoc, doc } from "firebase/firestore";
 import { db } from "../../../config/firebase";
 import { ARROW_LEFT } from "../../../components/svgs";
+import Footer from "../../../components/globals/Footer";
 
 export default function Page() {
   const username = useRef();
@@ -36,7 +37,7 @@ export default function Page() {
   return (
     <main className="bg-emerald-50/5">
       <NavBar />
-      <div className="my-12 px-4">
+      <div className="my-12 px-4 min-h-[60vh]">
         <Link
           className="transition-all font-semibold text-lg w-fit py-1 px-3 mb-4 rounded-full text-emerald-700 ring-2 ring-emerald-400 active:scale-90 flex flex-row gap-1 justify-center items-center"
           href={"/register"}
@@ -121,6 +122,7 @@ export default function Page() {
           </div>
         )}
       </div>
+      <Footer />
     </main>
   );
 }

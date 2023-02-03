@@ -1,6 +1,7 @@
 "use client";
 import axios from "axios";
 import { addDoc, collection } from "firebase/firestore";
+import Link from "next/link";
 import React, { useRef, useState } from "react";
 import NavBar from "../../../components/globals/NavBar";
 import { ARROW_LEFT } from "../../../components/svgs";
@@ -37,7 +38,7 @@ export default function Page({ params }) {
     }
   }
   return (
-    <main className="bg-gradient-to-tr from-green-300 to-blue-400 min-h-screen">
+    <main className="bg-gradient-to-tr from-green-300 to-blue-400 min-h-screen relative">
       <NavBar />
       <div className="min-h-[80vh] rounded-2xl flex justify-center items-center">
         <div className="w-[75%] sm:w-[55%] md:w-[45%] lg:w-[35%] xl:w-[30%] 2xl:w-96 p-4 bg-white  rounded-xl shadow-2xl shadow-black/10">
@@ -97,6 +98,12 @@ export default function Page({ params }) {
           )}
         </div>
       </div>
+      <Link
+        className="transition-all font-semibold text-lg lg:text-xl xl:text-2xl w-fit py-2 px-4 rounded-full bg-white text-emerald-600 active:scale-90 flex flex-row gap-1 justify-center items-center absolute bottom-[5%] left-1/2 -translate-x-1/2"
+        href={"/register"}
+      >
+        Create Your own
+      </Link>
     </main>
   );
 }

@@ -127,6 +127,7 @@ export default function ContactForm() {
     </section>
   );
 }
+
 async function addSupport(text) {
   await addDoc(collection(db, "support"), {
     data: text,

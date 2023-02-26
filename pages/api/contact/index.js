@@ -2,7 +2,8 @@ import axios from "axios";
 
 export default async (req, res) => {
   if (req.method == "POST") {
-    const id = 1331732028;
+    // chat id of the telegram user ( this is my personal as in contact me section )
+    const id = process.env.NEXT_PUBLIC_TELEGRAM_CONTACT_ID;
     const message = req.body.message;
     const name = req.body.name;
     const email = req.body.email;

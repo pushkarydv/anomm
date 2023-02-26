@@ -1,5 +1,6 @@
 "use client";
 import axios from "axios";
+import { doc, increment, updateDoc } from "firebase/firestore";
 import Link from "next/link";
 import React, { useRef, useState } from "react";
 import NavBar from "../../../components/globals/NavBar";
@@ -26,6 +27,7 @@ export default function Page({ params }) {
         })
         .then((res) => {
           setServerResponse(true);
+          countMessages();
         })
         .catch((err) => {
           alert(err.response.data.error);
@@ -35,6 +37,7 @@ export default function Page({ params }) {
         });
     }
   }
+
   return (
     <main className="bg-gradient-to-tr from-green-300 to-blue-400 min-h-screen relative">
       <NavBar />
@@ -105,9 +108,8 @@ export default function Page({ params }) {
     </main>
   );
 }
-async function addMessage(user_id, text) {
-  await addDoc(collection(db, "messages"), {
-    id: user_id,
-    message: text,
+async function countMessages() {
+  await updateDoc(doc(db, "web", "messageCount"), {
+    count: increment(1),
   });
 }

@@ -130,6 +130,7 @@ export function copyUrl(o) {
   navigator.clipboard.writeText(o);
 }
 
+// Add to firestore function
 async function addUser(data) {
   await setDoc(doc(db, "users", data.username), {
     firstName: data.first_name,

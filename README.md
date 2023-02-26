@@ -76,3 +76,5 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 [![](https://img.shields.io/badge/pushkaryadav__-%23E4405F.svg?logo=Instagram&logoColor=white&style=for-the-badge)](https://www.instagram.com/pushkaryadav_/)
 [![](https://img.shields.io/badge/pushkarydv-%230077B5.svg?logo=linkedin&logoColor=white&style=for-the-badge)](https://www.linkedin.com/in/pushkarydv)
 [![](https://img.shields.io/badge/pushkaryadavin-%231DA1F2.svg?logo=Twitter&logoColor=white&style=for-the-badge)](https://twitter.com/pushkaryadavin)
+
+![](https://visitcount.itsvg.in/api?id=anomm&label=Repo%20Views&color=9&icon=1&pretty=false)

@@ -12,7 +12,7 @@ export default function Footer() {
           <span className="ml-3 text-xl">Anomm</span>
         </a>
         <p className="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
-          © 2023 Pushkar Yadav —
+          Built with 💚 by Pushkar Yadav —
           <a
             href="https://github.com/pushkarydv"
             className="text-gray-600 ml-1"

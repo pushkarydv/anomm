@@ -24,7 +24,7 @@ Anomm is a service to deliver anonymous messages from a web based link (dynamic 
 
 6. The person who receives the link can send messages to the bot and you will receive them on your Telegram account.
 
-7. You can share your experience with us via Twitter [Twitter](https://twitter.com/pushkaryadavin) or [LinkedIn](https://www.linkedin.com/in/pushkarydv).
+7. You can share your experience with us via [Twitter](https://twitter.com/pushkaryadavin) or [LinkedIn](https://www.linkedin.com/in/pushkarydv).
 
 ## Hey Contributors
 

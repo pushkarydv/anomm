@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Features() {
   return (
-    <section className="m-4 md:m-8">
+    <section className="m-4 md:m-8" id="features">
       <div className="container mx-auto p-4 my-6 space-y-2 text-center">
         <h2 className="text-4xl font-bold">Why Us?</h2>
       </div>
@@ -24,7 +24,7 @@ export default function Features() {
   );
 }
 
-const Feature = ({ title, description }) => {
+export const Feature = ({ title, description }) => {
   return (
     <div className="flex flex-col items-center p-4 bg-violet-50 rounded-lg py-8">
       <svg

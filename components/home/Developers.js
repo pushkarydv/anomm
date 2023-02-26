@@ -1,6 +1,5 @@
 import React from "react";
 import { GITHUB_ICON } from "../svgs";
-import { Feature } from "./Features";
 
 export default function Developers() {
   return (

@@ -17,7 +17,7 @@ Anomm is a service to deliver anonymous messages from a web based link (dynamic 
 
 4. On website follow the steps and Enter your Telegram username (without `@`), and click on `Continue`
 
-5. It will generate a link for you, copy it and share it with the person you want to get messages from.
+5. It will generate a link for you (that will also be sent on your telegram via message), copy it and share it with the person you want to get messages from.
 
    - You can add this at community forms to get reviews,suggestions, etc.
    - There is a lot more you can do with this. Just your creativity is the limit.

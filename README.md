@@ -64,12 +64,34 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 </details>
 
+## What does it have
+ - Fully SSR with Next.js
+ - custom REST API for an integrated Telegram Bot 
+ - Tailwind CSS
+ - Next JS SEO
+ - Firebase
+ - Dynamic routing for message/id page
+ - and beautiful UI😅
+
+## Tech Stack Used to build this
+
+![Next JS ](https://img.shields.io/badge/Next-black?logo=next.js&logoColor=white&style=for-the-badge)
+![Firebase](https://img.shields.io/badge/Firebase-000.svg?logo=firebase&logoColor=white&style=for-the-badge)
+![React](https://img.shields.io/badge/react-%2320232a.svg?logo=react&logoColor=%2361DAFB&style=for-the-badge)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?logo=css3&logoColor=white&style=for-the-badge)
+![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?logo=html5&logoColor=white&style=for-the-badge)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?logo=javascript&logoColor=%23F7DF1E&style=for-the-badge)
+![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?logo=express&logoColor=%2361DAFB&style=for-the-badge)
+![NPM ](https://img.shields.io/badge/NPM-%23000000.svg?logo=npm&logoColor=white&style=for-the-badge)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?logo=tailwind-css&logoColor=white&style=for-the-badge)
+![Git](https://img.shields.io/badge/git-%23F05033.svg?logo=git&logoColor=white&style=for-the-badge)
+![Vercel](https://img.shields.io/badge/-Vercel-000?style=for-the-badge&logo=vercel)
+
 ## Screenshots
-
-<br/>
-<details><summary align="center">View All</summary>
-
-</details>
+![image](https://user-images.githubusercontent.com/96358784/221416059-ba45ad51-7e94-493d-bf1c-c94dc3892316.png)
+![image](https://user-images.githubusercontent.com/96358784/221416079-9c57cc36-43a3-4596-a9ef-0b92aea912a6.png)
+![image](https://user-images.githubusercontent.com/96358784/221416165-d3bad87d-6e38-42fe-adc2-34aad1814c25.png)
 
 ## Social Media
 

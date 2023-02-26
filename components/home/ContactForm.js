@@ -27,6 +27,7 @@ export default function ContactForm() {
         })
         .then((res) => {
           setServerResponse(true);
+          // Save to firestore as contact data might lost in telegram
           addSupport(res.data.data.result.text);
         })
         .catch((err) => {

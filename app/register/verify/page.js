@@ -23,7 +23,7 @@ export default function Page() {
         })
         .then((res) => {
           setUser(res.data.user);
-          // add this user to our database
+          // This this user to firestore ( if not already exist )
           addUser(res.data.user);
         })
         .catch((err) => {

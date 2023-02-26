@@ -1,6 +1,5 @@
 "use client";
 import axios from "axios";
-import { addDoc, collection } from "firebase/firestore";
 import Link from "next/link";
 import React, { useRef, useState } from "react";
 import NavBar from "../../../components/globals/NavBar";
@@ -27,7 +26,6 @@ export default function Page({ params }) {
         })
         .then((res) => {
           setServerResponse(true);
-          addMessage(id, res.data.data.result.text);
         })
         .catch((err) => {
           alert(err.response.data.error);

@@ -2,6 +2,7 @@ import axios from "axios";
 
 export default async (req, res) => {
   if (req.method == "POST") {
+    // telegram bot token ( you can get this by botfather )
     const updates = await axios.get(
       `https://api.telegram.org/bot${process.env.NEXT_PUBLIC_TELEGRAM_BOT_TOKEN}/getUpdates`
     );

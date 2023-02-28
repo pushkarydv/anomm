@@ -3,6 +3,24 @@ import React from "react";
 export default function Footer() {
   return (
     <footer className="text-gray-600 body-font">
+      {/* Producthunt Badge Start */}
+      <div className="grid mt-24 lg:mt-36 mb-12 lg:mb-24 place-items-center">
+        <a
+          href="https://www.producthunt.com/posts/anomm-2?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-anomm&#0045;2"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <img
+            src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=381641&theme=light"
+            alt="Anomm - Anonymous&#0032;messages&#0032;in&#0032;a&#0032;completely&#0032;different&#0032;way | Product Hunt"
+            style={{ width: "250px", height: "54px" }}
+            width="250"
+            height="54"
+          />
+        </a>
+      </div>
+      {/* Producthunt Badge End */}
+
       <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
         <a
           className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900"

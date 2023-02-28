@@ -90,9 +90,17 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ![Vercel](https://img.shields.io/badge/-Vercel-000?style=for-the-badge&logo=vercel)
 
 ## Screenshots
+
 ![image](https://user-images.githubusercontent.com/96358784/221416059-ba45ad51-7e94-493d-bf1c-c94dc3892316.png)
+
+<br/>
+<details><summary align="center">View All</summary>
+
 ![image](https://user-images.githubusercontent.com/96358784/221416079-9c57cc36-43a3-4596-a9ef-0b92aea912a6.png)
 ![image](https://user-images.githubusercontent.com/96358784/221416165-d3bad87d-6e38-42fe-adc2-34aad1814c25.png)
+
+</details/>
+<br/>
 
 ## Social Media
 

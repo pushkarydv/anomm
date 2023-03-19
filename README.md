@@ -6,20 +6,16 @@
 <a href="https://github.com/pushkarydv/anomm/issues"><img src="https://img.shields.io/github/issues/pushkarydv/anomm?style=flat-square" alt="GitHub issues"></a>
 <a href="https://github.com/pushkarydv/anomm/pulls"><img src="https://img.shields.io/github/issues-pr/pushkarydv/anomm?style=flat-square" alt="GitHub pull requests"></a>
 <a href="https://github.com/pushkarydv/anomm/blob/master/LICENSE"><img src="https://img.shields.io/github/license/pushkarydv/anomm?style=flat-square" alt="GitHub license"></a>
-<a href="https://github.com/pushkarydv/anomm/commits/master"><img src="https://img.shields.io/github/last-commit/pushkarydv/anomm?style=flat-square" alt="GitHub last commit"></a>
-<a href="https://github.com/pushkarydv/anomm/graphs/contributors"><img src="https://img.shields.io/github/contributors/pushkarydv/anomm?style=flat-square" alt="GitHub contributors"></a>
 <a href="https://github.com/pushkarydv/anomm"><img src="https://img.shields.io/github/languages/code-size/pushkarydv/anomm?style=flat-square" alt="GitHub code size in bytes"></a>
 <a href="https://github.com/pushkarydv/anomm"><img src="https://img.shields.io/github/repo-size/pushkarydv/anomm?style=flat-square" alt="GitHub repo size"></a></p>
 <h3><strong><em>Anonymous messages in a completely different way</em></strong></h3>
 </div>
 <br>
-
 <img src="https://visitcount.itsvg.in/api?id=anomm&amp;label=Repo%20Views&amp;color=9&amp;icon=1&amp;pretty=false" alt="">
 
 # What is anomm? [`▶️`](https://www.youtube.com/watch?v=aSy2jtIhtZU&ab_channel=PushkarYadav)
 
 Anomm is a service to deliver anonymous messages from a web based link (dynamic for each user) to a Telegram bot.
-
 
 ## How to use it 🤔
 
@@ -40,18 +36,20 @@ Anomm is a service to deliver anonymous messages from a web based link (dynamic 
 
 7. You can share your experience with us via [Twitter](https://twitter.com/pushkaryadavin) or [LinkedIn](https://www.linkedin.com/in/pushkarydv).
 
-## Screenshots 📷
+## Features ✨
+ - Fully SSR with Next.js
+ - custom REST API for an integrated Telegram Bot 
+ - Tailwind CSS
+ - Next JS SEO
+ - Firebase
+ - Dynamic routing for message/id page
+ - and beautiful UI😅
 
-![image](https://user-images.githubusercontent.com/96358784/221416059-ba45ad51-7e94-493d-bf1c-c94dc3892316.png)
+## Hey Contributors 🤝
 
-<br/>
-<details><summary align="center">View All</summary>
+Feel free to contribute in this project. add much more widgets, pages, etc. to make it more user friendly.
 
-![image](https://user-images.githubusercontent.com/96358784/221416079-9c57cc36-43a3-4596-a9ef-0b92aea912a6.png)
-![image](https://user-images.githubusercontent.com/96358784/221416165-d3bad87d-6e38-42fe-adc2-34aad1814c25.png)
-
-</details/>
-<br/>
+But just before that please read the [**`CONTRIBUTING.md`**](./CONTRIBUTING.md)
 
 ## Using the code ⚙️
 
@@ -87,15 +85,6 @@ Open [`http://localhost:3000`](http://localhost:3000) with your browser to see t
 
 </details>
 
-## Features ✨
- - Fully SSR with Next.js
- - custom REST API for an integrated Telegram Bot 
- - Tailwind CSS
- - Next JS SEO
- - Firebase
- - Dynamic routing for message/id page
- - and beautiful UI😅
-
 ## Tech Stack Used to build this 🛠️
 
 ![Next JS ](https://img.shields.io/badge/Next-black?logo=next.js&logoColor=white&style=for-the-badge)
@@ -111,12 +100,18 @@ Open [`http://localhost:3000`](http://localhost:3000) with your browser to see t
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?logo=git&logoColor=white&style=for-the-badge)
 ![Vercel](https://img.shields.io/badge/-Vercel-000?style=for-the-badge&logo=vercel)
 
+## Screenshots 📷
 
-## Hey Contributors 🤝
+![image](https://user-images.githubusercontent.com/96358784/221416059-ba45ad51-7e94-493d-bf1c-c94dc3892316.png)
 
-Feel free to contribute in this project. add much more widgets, pages, etc. to make it more user friendly.
+<br/>
+<details><summary align="center">View All</summary>
 
-But just before that please read the [**`CONTRIBUTING.md`**](./CONTRIBUTING.md)
+![image](https://user-images.githubusercontent.com/96358784/221416079-9c57cc36-43a3-4596-a9ef-0b92aea912a6.png)
+![image](https://user-images.githubusercontent.com/96358784/221416165-d3bad87d-6e38-42fe-adc2-34aad1814c25.png)
+
+</details/>
+<br/>
 
 ## Social Media 👍
 
